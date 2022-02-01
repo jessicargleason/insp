@@ -1,6 +1,8 @@
 import React from "react";
-import Filter from "src/components/Filter";
-import ResetFilter from "src/components/ResetFilter";
+import Filter from "src/components/FilterList/Filter";
+import ResetFilter from "src/components/FilterList/ResetFilter";
+
+import style from './style.module.css';
 
 export default function FilterList({
   styles,
@@ -9,8 +11,8 @@ export default function FilterList({
 }) {
   return (
     <div>
-      <h2>Styles</h2>
-      <ul>
+      <h2>Filter By Style</h2>
+      <ul className={style.list}>
         {Object.keys(styles).map((style, i) => {
           if (styles[style] === "All Vacations") {
             return (

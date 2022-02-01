@@ -59,7 +59,7 @@ export default function Layout() {
       filteredTrips = sortedLocations;
     }
     setSelectedLocations(filteredTrips);
-  }, [activeFilters, sortedLocations]);
+  }, [activeFilters, sortedLocations, direction]);
 
   return (
     <main>
