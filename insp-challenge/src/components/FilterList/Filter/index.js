@@ -24,6 +24,7 @@ export default function Filter({ name, handleFilterChange, activeFilters }) {
     <button
       onClick={handleClick}
       className={`${style.filter} ${selected ? style.selected : ""}`}
+      aria-pressed={selected}
     >
       {name}
     </button>

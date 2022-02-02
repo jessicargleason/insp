@@ -20,6 +20,7 @@ export default function ResetFilter({
     <button
       onClick={handleClick}
       className={`${style.filter} ${selected ? style.selected : ""}`}
+      aria-pressed={selected}
     >
       {name}
     </button>
