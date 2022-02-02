@@ -1,4 +1,3 @@
-import React from "react";
 import { string, func, array } from "prop-types";
 
 import style from "../style.module.css";
@@ -35,4 +34,4 @@ Filter.propTypes = {
   handleFilterChange: func.isRequired,
   activeFilters: array.isRequired,
   name: string.isRequired,
-}
+};

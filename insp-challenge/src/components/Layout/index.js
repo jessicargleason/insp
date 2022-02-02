@@ -44,9 +44,9 @@ export default function Layout() {
     );
   }
 
-  const handleSort = event => {
+  const handleSort = (event) => {
     setDirection(event.target.value);
-  }
+  };
 
   useEffect(() => {
     let filteredTrips;

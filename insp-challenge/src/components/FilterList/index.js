@@ -1,10 +1,9 @@
-import React from "react";
 import { array, func, object } from "prop-types";
 
 import Filter from "src/components/FilterList/Filter";
 import ResetFilter from "src/components/FilterList/ResetFilter";
 
-import style from './style.module.css';
+import style from "./style.module.css";
 
 export default function FilterList({
   styles,
@@ -44,7 +43,7 @@ export default function FilterList({
 }
 
 FilterList.propTypes = {
-    styles: object.isRequired,
-    activeFilters: array.isRequired,
-    handleFilterChange: func.isRequired,
-}
+  styles: object.isRequired,
+  activeFilters: array.isRequired,
+  handleFilterChange: func.isRequired,
+};

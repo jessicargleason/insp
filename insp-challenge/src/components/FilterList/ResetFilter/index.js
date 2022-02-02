@@ -1,4 +1,3 @@
-import React from "react";
 import { string, func, array } from "prop-types";
 
 import style from "../style.module.css";
@@ -28,7 +27,7 @@ export default function ResetFilter({
 }
 
 ResetFilter.propTypes = {
-    handleFilterChange: func.isRequired,
-    activeFilters: array.isRequired,
-    name: string.isRequired,
-}
+  handleFilterChange: func.isRequired,
+  activeFilters: array.isRequired,
+  name: string.isRequired,
+};
