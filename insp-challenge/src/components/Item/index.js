@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from "prop-types";
 
 import style from './style.module.css';
 
@@ -20,4 +21,11 @@ export default function Item({ image, name, unitStyle, date }) {
             </div>
         </div>
     )
+}
+
+Item.propTypes = {
+    image: string.isRequired,
+    name: string.isRequired,
+    unitStyle: string.isRequired,
+    date: string.isRequired,
 }

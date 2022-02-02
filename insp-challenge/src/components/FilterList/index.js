@@ -1,4 +1,6 @@
 import React from "react";
+import { array, func, object } from "prop-types";
+
 import Filter from "src/components/FilterList/Filter";
 import ResetFilter from "src/components/FilterList/ResetFilter";
 
@@ -39,4 +41,10 @@ export default function FilterList({
       </ul>
     </div>
   );
+}
+
+FilterList.propTypes = {
+    styles: object.isRequired,
+    activeFilters: array.isRequired,
+    handleFilterChange: func.isRequired,
 }

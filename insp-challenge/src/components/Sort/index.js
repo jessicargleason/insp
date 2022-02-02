@@ -1,4 +1,5 @@
 import React from "react";
+import { func, string } from "prop-types";
 
 import style from "./style.module.css";
 
@@ -14,4 +15,9 @@ export default function Sort({ handleChange, direction }) {
       </select>
     </>
   );
+}
+
+Sort.propTypes = {
+    handleChange: func.isRequired,
+    direction: string.isRequired,
 }

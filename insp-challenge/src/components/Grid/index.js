@@ -1,6 +1,7 @@
 import React from 'react';
-import Item from 'src/components/Item';
+import { array } from "prop-types";
 
+import Item from 'src/components/Item';
 import style from './style.module.css';
 
 export default function Grid({ locations }) {
@@ -23,4 +24,8 @@ export default function Grid({ locations }) {
             </ul>
         </>
     )
+}
+
+Grid.propTypes = {
+    locations: array.isRequired,
 }
